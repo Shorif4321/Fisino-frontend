@@ -1,0 +1,631 @@
+body {
+    scroll-behavior: smooth;
+    scrollbar-width: 12px;
+    scrollbar-color: #606060;
+    scrollbar-arrow-color: #606060;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: 12px;
+    scrollbar-color: #606060;
+    scrollbar-arrow-color: #606060;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #606060;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-button {
+    color: #606060;
+    border: 1px solid #606060;
+}
+::-webkit-scrollbar-button:single-button:increment {
+    background: url(./assets/downArrow.svg) no-repeat;
+    background-position: center;
+    background-size: 5px;
+}
+::-webkit-scrollbar-button:single-button:decrement {
+    background: url(./assets/upperArrow.svg) no-repeat;
+    background-position: center;
+    background-size: 5px;
+}
+
+
+/* 
+===============================
+===============================
+            Theme
+===============================
+===============================
+*/
+
+.line {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #ff8000;
+}
+
+.btn-pink {
+    background-color: #ff009d;
+}
+
+.btn-pink:hover {
+    background-color: #9f0062;
+}
+
+.btn-black-white {
+    background-color: #ffffff;
+    border: 2px solid #000000c4;
+    color: #000;
+    transition: all 0.5s;
+    box-shadow: 0 0 3px #00000052;
+}
+
+.btn-black-white:hover {
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #000000c4;
+    box-shadow: 0 0 3px #000000c6;
+}
+
+.btn-200px {
+    width: 200px;
+    height: 45px;
+}
+
+.height-700px {
+    height: 700px;
+}
+
+.width-70-responsive {
+    width: 70%;
+}
+
+.width-50-responsive {
+    width: 50%;
+}
+
+.border-1px {
+    border: 1px solid #00000039;
+}
+
+.bg-opacity-85 {
+    --bs-bg-opacity: 0.85;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.width-200px {
+    width: 200px;
+}
+
+.user {
+    width: 240px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+
+.user-icon {
+    height: 35px;
+    width: 35px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    margin: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.user-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.user-details {
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 0 4px #0000006b;
+    top: 45px;
+    padding: 5px 20px;
+    background: #ffffffe8;
+    text-transform: lowercase;
+    font-weight: 500;
+    display: none;
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.lowerCase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/*
+===========================
+===========================
+        Theme End 
+===========================
+===========================        
+*/
+
+/* colors */
+
+.color-text {
+    color: #000000c6;
+}
+
+.color-text2 {
+    color: #868686;
+}
+
+
+/* colors end */
+
+/* slider Background */
+
+.slideBgOne {
+    background: url(./assets/bgOne.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.slideBgTwo {
+    background: url(./assets/bgTwo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+.slideBgThree {
+    background: url(./assets/bgThree.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+}
+
+/* slider Bg End */
+
+/* slider contents */
+
+.slide-btn {
+    width: 200px;
+    height: 40px;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.908);
+}
+
+/* slider contents end */
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 8px 0;
+    z-index: 100;
+}
+
+header .logo img {
+    width: 140px;
+    height: auto;
+}
+
+header .nav-link {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    padding: 5px 0;
+}
+
+footer .logo img {
+    width: 150px;
+    height: auto;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+.banner-1 {
+    width: 300px;
+    height: auto;
+}
+
+.banner-2 {
+    width: 300px;
+    height: auto;
+}
+
+.slider-header {
+    font-size: 60px;
+}
+
+.book {
+    background: url(./assets/banner_home1d.jpg) no-repeat center center;
+    background-size: cover;
+    background-color: #00000049;
+    background-blend-mode: multiply;
+    transition: background 0.5s ease;
+}
+
+.hero {
+    margin: 30px 0;
+    border: 1px solid #fff;
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.hero h4 {
+    font-size: 40px;
+    color: #fff;
+}
+
+.card-img-top {
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cart-order {
+    position: absolute;
+    bottom: -30%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #0000003d;
+    padding: 10px 0;
+    transition: all 0.5s;
+}
+
+.cart-order .cart-sec-btn {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+
+.cart-order .cart-sec-btn:hover {
+    background: #ff3636;
+}
+
+.cart-order .cart-sec-btn:hover svg {
+    fill: #fff;
+    transition: all 0.4s;
+}
+
+.card-img-top img {
+    width: 100%;
+    transition: all 1s;
+}
+
+.card:hover .card-img-top img {
+    transform: scale(1.2);
+}
+
+.card:hover .cart-order {
+    bottom: 0;
+}
+
+.women {
+    background: url(./assets/women.png) no-repeat;
+    background-size: 100%;
+    height: 500px;
+    padding-left: 120px;
+}
+
+.women h1 {
+    padding-top: 220px;
+}
+
+.women a {
+    text-underline-offset: 8px;
+}
+
+.women a:hover {
+    text-decoration-color: #f3199f;
+}
+
+.men {
+    background: url(./assets/men.png) no-repeat;
+    background-size: 105%;
+    height: 550px;
+    padding-left: 80px;
+    margin-top: 100px;
+}
+
+.men h1 {
+    padding-top: 290px;
+}
+
+.men a {
+    text-underline-offset: 8px;
+}
+
+.men a:hover {
+    text-decoration-color: #f3199f;
+}
+
+.sale-section {
+    background: url(./assets/banner_home1g.jpg) no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    text-align: center;
+    background-color: #00000047;
+    background-blend-mode: multiply;
+    transition: all 1s;
+}
+
+.sale-section h1 {
+    color: #fff;
+    font-size: 100px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.newslater input {
+    border: 0 !important;
+    border-bottom: 2px solid #000 !important;
+    border-radius: 0 !important;
+    background: none !important;
+}
+
+.newslater .btn {
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.newslater {
+    border: 2px solid #000;
+    padding: 40px 60px;
+    margin: 30px 0;
+}
+
+.products {
+    width: 100%;
+}
+
+.products-header {
+    height: 400px;
+    background: url(./assets/product.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-header {
+    background: url(./assets/about.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shipping {
+    background: url(./assets/about-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    padding: 40px 0;
+    background-color: #00000060;
+    background-blend-mode: multiply;
+}
+
+.shipping svg {
+    height: 45px;
+    fill: #fff;
+    margin: 0 0 20px 0;
+}
+
+.shipping h4,
+.shipping p {
+    color: #fff;
+}
+
+.counter input {
+    width: 100px;
+    font-size: 20px;
+    height: 45px;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    border-left: none;
+    border-right: none;
+}
+
+.counter .btn {
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    font-size: 20px;
+    height: 45px;
+}
+
+.counter .minus {
+    border-left: 2px solid #000;
+    border-radius: 0 !important;
+}
+
+.counter .plus {
+    border-right: 2px solid #000;
+    border-radius: 0 !important;
+}
+
+.cart-img {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.register {
+    background: url(./assets/accountBg.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+    background-color: #0000002c;
+    background-blend-mode: multiply;
+}
+
+.thirdParty button img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .women {
+        padding-left: 60px;
+    }
+
+    .women h1 {
+        padding-top: 150px;
+    }
+
+    .men {
+        padding-left: 30px;
+    }
+
+    .men h1 {
+        padding-top: 190px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .women {
+        padding-left: 100px;
+    }
+
+    .women h1 {
+        padding-top: 240px;
+    }
+
+    .men h1 {
+        padding-top: 290px;
+    }
+
+    .width-70-responsive {
+        width: 96%;
+    }
+
+    .width-50-responsive {
+        width: 96%;
+    }
+
+    header {
+        background-color: #ffffffe9 !important;
+        box-shadow: 0 0 4px #00000090 !important;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .slider-section h4,
+    .slider-section h1 {
+        text-align: center;
+    }
+
+    .slider-section h4 {
+        padding-top: 20px;
+    }
+
+    .res-width {
+        width: 100% !important;
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    .hero {
+        width: 95% !important;
+    }
+
+    .counter input {
+        width: 100%;
+    }
+
+    .counter .btn-group {
+        width: 100%;
+    }
+
+    .counter .orderBtn {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 592px) {
+    .women {
+        padding-left: 80px;
+        background-size: cover;
+    }
+
+    .women h1 {
+        padding-top: 200px;
+    }
+
+    .men {
+        margin-top: 15px;
+        background-size: cover;
+    }
+
+    .men h1 {
+        padding-top: 340px;
+    }
+
+    .cart-img {
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+        text-align: center;
+    }
+}
